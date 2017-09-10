@@ -1,5 +1,3 @@
-runtime! debian.vim
-
 if has("syntax")
   syntax on
 endif
@@ -10,11 +8,10 @@ if has("autocmd")
   filetype plugin indent on
 endif
 
-set smartcase		" Do smart case matching
-set incsearch		" Incremental search
-set hidden          " Hide buffers when they are abandoned
+set smartcase
+set incsearch
+set hidden
 
-set number
 set ch=1
 
 "using backspace as x
@@ -28,8 +25,6 @@ set expandtab
 set linebreak
 set dy=lastline
 colorscheme darkblue
-"disable vi beeps and other ugly shit
-set nocompatible
 filetype on
 filetype plugin on
 set smarttab
@@ -84,7 +79,7 @@ function! TrimWhiteSpace()
     %s/\s\+$//e
 endfunction
 
-" Highlight problematic whitespace
+" highlight trailing whitespace
 set list
 set listchars=tab:›\ ,trail:•,extends:#,nbsp:.
 nmap <leader>l :set list!<CR>
