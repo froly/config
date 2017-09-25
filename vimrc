@@ -79,14 +79,20 @@ function! TrimWhiteSpace()
     %s/\s\+$//e
 endfunction
 
-" highlight trailing whitespace
+"highlight trailing whitespace
 set list
 set listchars=tab:›\ ,trail:•,extends:#,nbsp:.
 nmap <leader>l :set list!<CR>
 nmap <space>; mzA;<Esc>`z
 
-" jump to the last position when reopening a file
+"jump to the last position when reopening a file
 if has("autocmd")
     au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 endif
+
+"positioning
+nmap <space> <nop>
+noremap <space>u zbkj
+noremap <space>d ztkj
+noremap <space><space> zz
 
