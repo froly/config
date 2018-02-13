@@ -96,3 +96,7 @@ noremap <space>u zbkj
 noremap <space>d ztkj
 noremap <space><space> zz
 
+"highlight current line
+set cursorline
+hi CursorLine cterm=NONE ctermbg=234 guibg=235
+
