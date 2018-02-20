@@ -98,5 +98,10 @@ noremap <space><space> zz
 
 "highlight current line
 set cursorline
-hi CursorLine cterm=NONE ctermbg=234 guibg=235
+hi CursorLine cterm=NONE ctermbg=234
+hi CursorLineNr cterm=bold ctermfg=226
+hi Comment ctermfg=120
+hi Search ctermfg=3
+
+
 
