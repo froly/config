@@ -102,6 +102,12 @@ hi CursorLine cterm=NONE ctermbg=234
 hi CursorLineNr cterm=bold ctermfg=226
 hi Comment ctermfg=120
 hi Search ctermfg=3
-
-
+"adds db for cstag
+cs a cscope.out
+"make with hotkey
+map <C-r> :make<CR>
+"for px4 development
+"set noet ci pi sts=0 sw=4 ts=4
+"toggle tabs to spaces
+"retab
 
