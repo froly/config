@@ -122,3 +122,6 @@ set ls=2
 cs a cscope.out
 map <c-q> :cs find c 
 
+"hlsearch color
+hi Search ctermbg=DarkGrey
+
