@@ -80,8 +80,8 @@ function! TrimWhiteSpace()
 endfunction
 
 "highlight trailing whitespace
-set list
-set listchars=tab:›\ ,trail:•,extends:#,nbsp:.
+"set list
+"set listchars=tab:›\ ,trail:•,extends:#,nbsp:.
 nmap <leader>l :set list!<CR>
 nmap <space>; mzA;<Esc>`z
 
@@ -110,7 +110,7 @@ hi Search ctermfg=3
 
 "build options
 map <c-e> :tselect<CR>
-map <c-b> :make<CR>
+map <c-b> :!env DEBUG=1 make<CR>
 map <c-n> :cn<CR>
 map <c-p> :cp<CR>
 map <c-m> :clist<CR>
