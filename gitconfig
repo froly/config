@@ -3,7 +3,7 @@
     name = Foo Bar
 [alias]
     s = status
-    l = log --graph --pretty=oneline
+    l = log --graph --decorate --oneline
     c = commit
     co = checkout
     d = diff
