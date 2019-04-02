@@ -128,10 +128,14 @@ hi Search ctermbg=DarkGrey
 "https://github.com/itchyny/lightline.vim
 "https://github.com/tpope/vim-fugitive
 "https://github.com/majutsushi/tagbar
+"https://github.com/scrooloose/nerdtree.git
 "plugins setup
 set runtimepath+=~/.vim_runtime
 
+nmap <F9> :NERDTreeToggle<CR>
 nmap <F10> :TagbarToggle<CR>
+let g:tagbar_left = 1
+let g:tagbar_width = 40
 
 let g:lightline = {
       \ 'colorscheme': 'wombat',
