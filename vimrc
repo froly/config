@@ -120,8 +120,27 @@ set ls=2
 
 "examine call stack
 cs a cscope.out
-map <c-q> :cs find c 
+nmap <c-f> :cs find c <c-r><c-w><CR>
 
 "hlsearch color
 hi Search ctermbg=DarkGrey
+
+"https://github.com/itchyny/lightline.vim
+"https://github.com/tpope/vim-fugitive
+"https://github.com/majutsushi/tagbar
+"plugins setup
+set runtimepath+=~/.vim_runtime
+
+nmap <F10> :TagbarToggle<CR>
+
+let g:lightline = {
+      \ 'colorscheme': 'wombat',
+      \ 'active': {
+      \   'left': [ [ 'mode', 'paste' ],
+      \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
+      \ },
+      \ 'component_function': {
+      \   'gitbranch': 'fugitive#head'
+      \ },
+      \ }
 
