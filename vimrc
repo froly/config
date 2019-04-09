@@ -1,3 +1,4 @@
+set shell=/bin/bash
 if has("syntax")
   syntax on
 endif
@@ -110,7 +111,7 @@ hi Search ctermfg=3
 
 "build options
 map <c-e> :tselect<CR>
-map <c-b> :!env DEBUG=1 make<CR>
+map <c-b> :make<CR>
 map <c-n> :cn<CR>
 map <c-p> :cp<CR>
 map <c-m> :clist<CR>
@@ -124,4 +125,28 @@ map <c-q> :cs find c
 
 "hlsearch color
 hi Search ctermbg=DarkGrey
+
+"plugins
+"runtimepath for plugins
+set runtimepath+=~/.vim_runtime
+
+"tagbar
+map <F10> :TagbarToggle<CR>
+let g:tagbar_left = 1
+let g:tagbar_width = 40
+
+"ale
+"let g:ale_completion_enabled = 1
+
+"airline
+let g:airline#extensions#tabline#enabled = 1
+""show just the filename
+let g:airline#extensions#tabline#buffer_min_count = 2
+let g:airline#extensions#tabline#fnamemod = ':t'
+let g:airline#extensions#tabline#left_sep = ' '
+let g:airline#extensions#tabline#left_alt_sep = '|'
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#branch#enabled = 1
+let g:airline_theme = 'alduin'
+""let g:airline_powerline_fonts = 1
 
