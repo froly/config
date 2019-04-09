@@ -121,15 +121,21 @@ set ls=2
 
 "examine call stack
 cs a cscope.out
-map <c-q> :cs find c 
+nmap <c-f> :cs find c <c-r><c-w><CR>
 
 "hlsearch color
 hi Search ctermbg=DarkGrey
 
-"plugins
+"https://github.com/itchyny/lightline.vim
+"https://github.com/tpope/vim-fugitive
+"https://github.com/majutsushi/tagbar
+"https://github.com/scrooloose/nerdtree.git
+"https://github.com/vim-airline/vim-airline
 "runtimepath for plugins
 set runtimepath+=~/.vim_runtime
 
+"NERDTree
+nmap <F9> :NERDTreeToggle<CR>
 "tagbar
 map <F10> :TagbarToggle<CR>
 let g:tagbar_left = 1
@@ -149,4 +155,17 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#branch#enabled = 1
 let g:airline_theme = 'alduin'
 ""let g:airline_powerline_fonts = 1
+
+"let g:lightline = {
+"      \ 'colorscheme': 'seoul256',
+"      \ 'active': {
+"      \   'left': [ [ 'mode', 'paste' ],
+"      \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
+"      \ },
+"      \ 'component_function': {
+"      \   'gitbranch': 'fugitive#head'
+"      \ },
+"      \ }
+
+set noshowmode
 
