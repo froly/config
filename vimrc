@@ -122,6 +122,7 @@ set ls=2
 "examine call stack
 cs a cscope.out
 nmap <c-f> :cs find c <c-r><c-w><CR>
+nmap <c-w> :cs find s <c-r><c-w><CR>
 
 "hlsearch color
 hi Search ctermbg=DarkGrey
