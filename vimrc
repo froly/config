@@ -3,8 +3,6 @@ if has("syntax")
   syntax on
 endif
 
-set background=dark
-
 if has("autocmd")
   filetype plugin indent on
 endif
@@ -25,7 +23,6 @@ set softtabstop=4
 set expandtab
 set linebreak
 set dy=lastline
-colorscheme darkblue
 filetype on
 filetype plugin on
 set smarttab
@@ -59,11 +56,10 @@ set autoindent
 map <c-k> :find 
 map <c-l> :buffers<CR>:b
 nnoremap <F5> :buffers<CR>:buffer<Space>
-colorscheme zellner
 set number
 map <Space>h ^
 map <Space>l $
-nmap q ciW
+"nmap q ciW
 nmap K 5k
 nmap J 5j
 nmap H 15h
@@ -100,12 +96,18 @@ noremap <space>u zbkj
 noremap <space>d ztkj
 noremap <space><space> zz
 
-"highlight current line
-set cursorline
-hi CursorLine cterm=NONE ctermbg=234
-hi CursorLineNr cterm=bold ctermfg=226
-hi Comment ctermfg=120
-hi Search ctermfg=3
+function! Colorscheme(schema)
+    set background=dark
+    execute "colorscheme ". a:schema
+    "highlight current line
+    set cursorline
+    hi CursorLine cterm=NONE ctermbg=234
+    hi CursorLineNr cterm=bold ctermfg=226
+    hi Comment ctermfg=120
+    hi Search ctermfg=3
+endfunction
+
+call Colorscheme("peaksea")
 
 "for px4 development
 "set noet ci pi sts=0 sw=4 ts=4
