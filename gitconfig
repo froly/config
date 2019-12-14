@@ -16,6 +16,7 @@
     sta = stash --keep-index
 [core]
     autocrlf = input
+    editor = vim
 [receive]
     denyNonFastForwards = false
 [push]
