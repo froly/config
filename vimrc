@@ -128,6 +128,7 @@ set ls=2
 cs a cscope.out
 nmap <c-f> :cs find c <c-r><c-w><CR>
 nmap <c-x> :!./autopep8.sh<CR>:e!<CR>
+nmap <c-g> :cs find s <c-r><c-w><CR>
 
 "hlsearch color
 hi Search ctermbg=DarkGrey
