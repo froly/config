@@ -8,6 +8,9 @@ mkdir -p ~/.config/fish/functions
 cp config.fish ~/.config/fish
 cp fish_prompt.fish ~/.config/fish/functions
 
+mkdir -p ~/.vim/colors
+cp colors/* ~/.vim/colors
+
 # chsh -s /usr/local/bin/fish
 
 exit 0
