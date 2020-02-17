@@ -107,7 +107,8 @@ function! Colorscheme(schema)
     hi Search ctermfg=3
 endfunction
 
-call Colorscheme("peaksea")
+"https://github.com/sainnhe/vim-color-forest-night/
+call Colorscheme("forest-night")
 
 "for px4 development
 "set noet ci pi sts=0 sw=4 ts=4
