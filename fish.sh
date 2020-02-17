@@ -1,5 +1,5 @@
 #!/bin/bash
-set -U fish_color_autosuggestion '555'  'brblack'
+set -U fish_color_autosuggestion 'white'  'brblack'
 set -U fish_color_cancel -r
 set -U fish_color_command --bold
 set -U fish_color_comment red
@@ -13,7 +13,7 @@ set -U fish_color_host normal
 set -U fish_color_match --background=brblue
 set -U fish_color_normal normal
 set -U fish_color_operator bryellow
-set -U fish_color_param cyan
+set -U fish_color_param normal --bold
 set -U fish_color_quote yellow
 set -U fish_color_redirection brblue
 set -U fish_color_search_match 'bryellow'  '--background=brblack'

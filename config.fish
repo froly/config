@@ -7,8 +7,8 @@ end
 
 # custom export
 
-set -gx PATH $PATH (brew --prefix openvpn)/sbin:/usr/local/bin:/usr/local/opt/coreutils/libexec/gnubin:/Users/ash/repos/tools/gcc-arm-7/bin
-set -x MANPATH $MANPATH /usr/local/opt/coreutils/libexec/gnuman
+# set -gx PATH $PATH (brew --prefix openvpn)/sbin:/usr/local/bin:/usr/local/opt/coreutils/libexec/gnubin:/Users/ash/repos/tools/gcc-arm-7/bin
+# set -x MANPATH $MANPATH /usr/local/opt/coreutils/libexec/gnuman
 
 # set -x ANDROID_HOME $HOME/Library/Android/sdk
 # set -x PATH $PATH:$ANDROID_HOME/emulator
