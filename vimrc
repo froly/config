@@ -182,3 +182,5 @@ autocmd BufWritePost *.py silent! !ctags -R --python-kinds=-i --languages=python
 autocmd BufReadPost *.py silent! !ctags -R --python-kinds=-i --languages=python
 set colorcolumn=120
 hi ColorColumn ctermbg=black
+"read local .vimrc
+set exrc
